@@ -97,8 +97,8 @@ We experimented with **three different Deep Learning models**:
 flowchart TD
     A[🎤 Upload Audio File] --> B[React Frontend]
     B --> C[Django REST API Backend]
-    C --> D[Audio Preprocessing (MFCC Extraction)]
-    D --> E[Deep Learning Model (CNN)]
+    C --> D["Audio Preprocessing (MFCC Extraction)"]
+    D --> E["Deep Learning Model (CNN)"]
     E --> F[Return Predicted Emotion]
     F --> G[Display Result on Frontend]
 
