@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330" width="820" height="330" role="img" aria-label="System architecture: upload audio, React frontend, Django REST API, audio preprocessing, CNN model, predicted emotion, result shown on frontend">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c792ea"/>
+    </marker>
+    <style>
+      .box { fill:#16161a; stroke:#c792ea; stroke-width:1.5; }
+      .hot { fill:#1d1626; stroke:#febc2e; stroke-width:1.8; }
+      .t   { fill:#f2f2ee; font:600 14px -apple-system,Segoe UI,Helvetica,Arial,sans-serif; text-anchor:middle; }
+      .s   { fill:#a9a9a3; font:12px -apple-system,Segoe UI,Helvetica,Arial,sans-serif; text-anchor:middle; }
+      .n   { fill:#febc2e; font:700 12px -apple-system,Segoe UI,Helvetica,Arial,sans-serif; }
+      .line{ stroke:#c792ea; stroke-width:1.8; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="820" height="330" rx="14" fill="#0e0e0c"/>
+  <text x="410" y="34" class="t" style="font-size:16px">Speech Emotion Recognition — System Architecture</text>
+
+  <!-- row 1 -->
+  <rect class="box" x="30"  y="64" width="160" height="70" rx="10"/><text class="n" x="42" y="82">1</text>
+  <text class="t" x="110" y="103">Upload Audio</text><text class="s" x="110" y="122">WAV file</text>
+
+  <rect class="box" x="230" y="64" width="160" height="70" rx="10"/><text class="n" x="242" y="82">2</text>
+  <text class="t" x="310" y="103">React Frontend</text><text class="s" x="310" y="122">upload + results UI</text>
+
+  <rect class="box" x="430" y="64" width="160" height="70" rx="10"/><text class="n" x="442" y="82">3</text>
+  <text class="t" x="510" y="103">Django REST API</text><text class="s" x="510" y="122">backend</text>
+
+  <rect class="box" x="630" y="64" width="160" height="70" rx="10"/><text class="n" x="642" y="82">4</text>
+  <text class="t" x="710" y="103">Preprocessing</text><text class="s" x="710" y="122">MFCC extraction</text>
+
+  <!-- row 2 (right to left) -->
+  <rect class="hot" x="630" y="214" width="160" height="70" rx="10"/><text class="n" x="642" y="232">5</text>
+  <text class="t" x="710" y="253">CNN Model</text><text class="s" x="710" y="272">deep learning</text>
+
+  <rect class="box" x="430" y="214" width="160" height="70" rx="10"/><text class="n" x="442" y="232">6</text>
+  <text class="t" x="510" y="253">Predicted Emotion</text><text class="s" x="510" y="272">returned by API</text>
+
+  <rect class="box" x="230" y="214" width="160" height="70" rx="10"/><text class="n" x="242" y="232">7</text>
+  <text class="t" x="310" y="253">Result on Frontend</text><text class="s" x="310" y="272">shown to the user</text>
+
+  <!-- arrows -->
+  <path class="line" d="M190 99 H228"/>
+  <path class="line" d="M390 99 H428"/>
+  <path class="line" d="M590 99 H628"/>
+  <path class="line" d="M710 134 V212"/>
+  <path class="line" d="M630 249 H592"/>
+  <path class="line" d="M430 249 H392"/>
+</svg>
